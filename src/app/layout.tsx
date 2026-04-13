@@ -6,6 +6,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "Renouv62 - Renovation & Facades dans le Pas-de-Calais",
   description:
@@ -27,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${geistSans.className} h-full antialiased`}>
+    <html lang="fr" className={`${geistSans.className}h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
